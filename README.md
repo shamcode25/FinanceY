@@ -18,7 +18,7 @@ An AI-powered financial document analysis platform that reads SEC filings (10-K/
 - **LLM**: OpenAI (gpt-4o) or open-source via Ollama later
 - **RAG**: FAISS + OpenAI embeddings
 - **Frontend**: React (Material-UI) or Streamlit
-- **Infra**: Docker (later), local dev first
+- **Infra**: Docker, local dev first
 
 ## Setup
 
@@ -54,11 +54,7 @@ An AI-powered financial document analysis platform that reads SEC filings (10-K/
    ```
    The UI will open in your browser at `http://localhost:5173`
 
-   **Option B: Streamlit Frontend**
-   ```bash
-   streamlit run frontend/app.py
-   ```
-   The UI will open in your browser at `http://localhost:8501`
+
 
 ### Option 2: Docker (Recommended for Production)
 
