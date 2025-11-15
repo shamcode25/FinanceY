@@ -1,0 +1,209 @@
+# Environment variables (NEVER commit these!)
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+venv/
+env/
+ENV/
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# Data and databases
+data/
+*.db
+*.sqlite
+*.sqlite3
+*.pkl
+*.faiss
+*.index
+*.h5
+*.hdf5
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+pnpm-debug.log*
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+.pytest_cache/
+cover/
+*.cover
+*.py,cover
+.hypothesis/
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Node.js / React Frontend
+frontend-react/node_modules/
+frontend-react/dist/
+frontend-react/.vite/
+frontend-react/build/
+frontend-react/.env
+frontend-react/.env.local
+frontend-react/.env.*.local
+frontend-react/npm-debug.log*
+frontend-react/yarn-debug.log*
+frontend-react/yarn-error.log*
+frontend-react/coverage/
+frontend-react/.nyc_output/
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# Documentation builds
+docs/_build/
+docs/_static/
+docs/_templates/
+site/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Cursor IDE
+.cursor/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+
+# Backup files
+*.backup
+*.old
+*.orig
+
+# Sensitive files
+secrets/
+*.secret
+*.token
+credentials.json
+service-account.json
+
+# Model files (large)
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+models/
+
+# Large data files
+*.csv
+*.tsv
+*.parquet
+*.arrow
+
+# Evaluation results
+eval/results/
+eval/results.csv
+eval/logs/
+
+# IDE specific
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+

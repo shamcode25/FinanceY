@@ -1,0 +1,13 @@
+Analyze the following financial document and summarize the key risks mentioned.
+
+Document: {document}
+
+Identify and summarize:
+1. Market risks
+2. Operational risks
+3. Financial risks
+4. Regulatory risks
+5. Competitive risks
+
+Provide a concise summary for each risk category identified.
+

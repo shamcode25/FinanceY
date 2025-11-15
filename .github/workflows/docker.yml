@@ -1,0 +1,62 @@
+name: Docker Build and Test
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build-backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+      
+      - name: Build backend image
+        run: |
+          docker build -f Dockerfile.backend -t financey-backend:test .
+      
+      - name: Test backend image
+        run: |
+          docker run --rm financey-backend:test python -c "from backend.config import settings; print('Config loaded')"
+
+  build-frontend-react:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+      
+      - name: Build React frontend image
+        run: |
+          docker build -f Dockerfile.frontend-react -t financey-frontend-react:test .
+
+  build-frontend-streamlit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+      
+      - name: Build Streamlit frontend image
+        run: |
+          docker build -f Dockerfile.frontend -t financey-frontend-streamlit:test .
+
+  test-compose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Validate docker-compose.yml
+        run: |
+          docker-compose config
+      
+      - name: Validate docker-compose.prod.yml
+        run: |
+          docker-compose -f docker-compose.prod.yml config
+

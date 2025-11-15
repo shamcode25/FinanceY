@@ -1,0 +1,142 @@
+[
+  {
+    "ticker": "AAPL",
+    "filing_type": "10-K",
+    "year": 2023,
+    "question": "What was Apple's total revenue for fiscal year 2023?",
+    "expected_keywords": ["revenue", "2023", "fiscal year", "total"]
+  },
+  {
+    "ticker": "AAPL",
+    "filing_type": "10-K",
+    "year": 2023,
+    "question": "What are the main risks mentioned in the risk factors section?",
+    "expected_keywords": ["risk", "factors", "main", "mentioned"]
+  },
+  {
+    "ticker": "MSFT",
+    "filing_type": "10-K",
+    "year": 2023,
+    "question": "What is Microsoft's net income for fiscal year 2023?",
+    "expected_keywords": ["net income", "2023", "fiscal year", "Microsoft"]
+  },
+  {
+    "ticker": "GOOGL",
+    "filing_type": "10-K",
+    "year": 2023,
+    "question": "What is Google's revenue breakdown by segment?",
+    "expected_keywords": ["revenue", "breakdown", "segment", "Google"]
+  },
+  {
+    "ticker": "AMZN",
+    "filing_type": "10-K",
+    "year": 2023,
+    "question": "What are Amazon's operating margins?",
+    "expected_keywords": ["operating", "margin", "Amazon"]
+  },
+  {
+    "ticker": "TSLA",
+    "filing_type": "10-K",
+    "year": 2023,
+    "question": "What is Tesla's free cash flow for 2023?",
+    "expected_keywords": ["free cash flow", "2023", "Tesla"]
+  },
+  {
+    "ticker": "META",
+    "filing_type": "10-K",
+    "year": 2023,
+    "question": "What are Meta's main competitive risks?",
+    "expected_keywords": ["competitive", "risk", "Meta"]
+  },
+  {
+    "ticker": "NVDA",
+    "filing_type": "10-K",
+    "year": 2023,
+    "question": "What is NVIDIA's earnings per share for 2023?",
+    "expected_keywords": ["earnings per share", "EPS", "2023", "NVIDIA"]
+  },
+  {
+    "ticker": "JPM",
+    "filing_type": "10-K",
+    "year": 2023,
+    "question": "What are JPMorgan's regulatory risks?",
+    "expected_keywords": ["regulatory", "risk", "JPMorgan"]
+  },
+  {
+    "ticker": "V",
+    "filing_type": "10-K",
+    "year": 2023,
+    "question": "What is Visa's revenue growth rate?",
+    "expected_keywords": ["revenue", "growth", "rate", "Visa"]
+  },
+  {
+    "ticker": "MA",
+    "filing_type": "10-K",
+    "year": 2023,
+    "question": "What are Mastercard's operational risks?",
+    "expected_keywords": ["operational", "risk", "Mastercard"]
+  },
+  {
+    "ticker": "DIS",
+    "filing_type": "10-K",
+    "year": 2023,
+    "question": "What is Disney's debt to equity ratio?",
+    "expected_keywords": ["debt", "equity", "ratio", "Disney"]
+  },
+  {
+    "ticker": "NFLX",
+    "filing_type": "10-K",
+    "year": 2023,
+    "question": "What are Netflix's market risks?",
+    "expected_keywords": ["market", "risk", "Netflix"]
+  },
+  {
+    "ticker": "CRM",
+    "filing_type": "10-K",
+    "year": 2023,
+    "question": "What is Salesforce's revenue for fiscal year 2023?",
+    "expected_keywords": ["revenue", "2023", "fiscal year", "Salesforce"]
+  },
+  {
+    "ticker": "ADBE",
+    "filing_type": "10-K",
+    "year": 2023,
+    "question": "What are Adobe's financial risks?",
+    "expected_keywords": ["financial", "risk", "Adobe"]
+  },
+  {
+    "ticker": "INTC",
+    "filing_type": "10-K",
+    "year": 2023,
+    "question": "What is Intel's operating margin?",
+    "expected_keywords": ["operating", "margin", "Intel"]
+  },
+  {
+    "ticker": "CSCO",
+    "filing_type": "10-K",
+    "year": 2023,
+    "question": "What are Cisco's competitive risks?",
+    "expected_keywords": ["competitive", "risk", "Cisco"]
+  },
+  {
+    "ticker": "PEP",
+    "filing_type": "10-K",
+    "year": 2023,
+    "question": "What is PepsiCo's net income for 2023?",
+    "expected_keywords": ["net income", "2023", "PepsiCo"]
+  },
+  {
+    "ticker": "COST",
+    "filing_type": "10-K",
+    "year": 2023,
+    "question": "What is Costco's revenue growth?",
+    "expected_keywords": ["revenue", "growth", "Costco"]
+  },
+  {
+    "ticker": "WMT",
+    "filing_type": "10-K",
+    "year": 2023,
+    "question": "What are Walmart's operational risks?",
+    "expected_keywords": ["operational", "risk", "Walmart"]
+  }
+]

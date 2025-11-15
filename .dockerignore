@@ -1,0 +1,78 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Data
+data/
+*.db
+*.sqlite
+*.pkl
+*.faiss
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Git
+.git/
+.gitignore
+
+# Environment
+.env
+.env.local
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Documentation
+docs/_build/
+
+# Docker (keep these for build context)
+# Dockerfile*
+# docker-compose*.yml
+# .dockerignore
+
+# Other
+*.tmp
+*.bak
+.cursor/
+
+# Frontend React
+frontend-react/node_modules/
+frontend-react/dist/
+frontend-react/.env
+frontend-react/.env.local
+
+# Data (will be mounted as volume)
+data/
+*.pkl
+*.faiss
+*.db
+*.sqlite
+
+# Documentation (not needed in containers)
+*.md
+!README.md
+docs/
+eval/
+IMPLEMENTATION_SUMMARY.md

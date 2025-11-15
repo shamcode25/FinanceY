@@ -1,0 +1,39 @@
+version: '3.8'
+
+# Docker Compose with Nginx reverse proxy
+# Usage: docker-compose -f docker-compose.yml -f docker/docker-compose.nginx.yml up -d
+
+services:
+  nginx:
+    image: nginx:alpine
+    container_name: financey-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./docker/nginx.prod.conf:/etc/nginx/nginx.conf:ro
+      - ./docker/ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - backend
+      - frontend-react
+    restart: always
+    networks:
+      - financey-network
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost/health"] || ["CMD", "curl", "-f", "http://localhost/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 256M
+        reservations:
+          cpus: '0.1'
+          memory: 64M
+
+networks:
+  financey-network:
+    external: true
+

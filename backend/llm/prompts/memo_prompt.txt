@@ -1,0 +1,16 @@
+Generate an investment memo based on the following financial information.
+
+Company: {company_name}
+Filing Period: {period}
+KPIs: {kpis}
+Risks: {risks}
+Additional Context: {context}
+
+Structure the memo as follows:
+1. Executive Summary
+2. Company Overview
+3. Financial Performance
+4. Key Risks
+5. Investment Thesis
+6. Recommendation
+

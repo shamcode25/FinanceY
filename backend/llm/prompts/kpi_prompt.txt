@@ -1,0 +1,15 @@
+Extract key performance indicators (KPIs) from the following financial document.
+
+Document: {document}
+
+Extract and return the following KPIs in JSON format:
+- Revenue
+- Net Income
+- EPS (Earnings Per Share)
+- Operating Margin
+- Debt-to-Equity Ratio
+- Free Cash Flow
+- Any other relevant financial metrics
+
+Format: JSON with keys as KPI names and values as the extracted numbers with units.
+
