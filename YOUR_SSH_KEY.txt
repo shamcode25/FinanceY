@@ -1,0 +1,31 @@
+YOUR SSH PUBLIC KEY TO ADD TO GITHUB
+=====================================
+
+Copy the entire line below and add it to GitHub:
+
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILF2WxyBCamZUDlCXNsC6s72sOvAAMw9+IJbUHSAxnIE shamcode25@github
+
+STEPS TO ADD TO GITHUB:
+1. Go to: https://github.com/settings/keys
+2. Click: "New SSH key"
+3. Title: "MacBook Pro - FinanceY" (or any name)
+4. Key type: Authentication Key
+5. Key: Paste the line above (the entire line starting with ssh-ed25519)
+6. Click: "Add SSH key"
+
+AFTER ADDING:
+1. Test connection: ssh -T git@github.com
+2. You should see: "Hi shamcode25! You've successfully authenticated..."
+3. Push to GitHub: git push -u origin main
+
+FINGERPRINT:
+SHA256:1Ciqi6hk5jGIo+qTK35BLWIsDVOpDSsMtA36ZoJyY3U
+
+KEY LOCATION:
+- Public key: ~/.ssh/id_ed25519_github.pub (safe to share)
+- Private key: ~/.ssh/id_ed25519_github (DO NOT SHARE - kept secret)
+
+NOTE:
+- This key is already loaded in your SSH agent
+- You can add multiple SSH keys to GitHub
+- After adding, you can push immediately
